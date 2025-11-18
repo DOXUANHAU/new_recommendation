@@ -1,0 +1,12 @@
+MINDlarge_train/
+MINDlarge_dev/
+MINDlarge_test/
+processed_data/
+
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.webp
