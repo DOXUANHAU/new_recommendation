@@ -114,11 +114,11 @@ for temp_file in temp_files:
 
 # ================== LƯU KẾT QUẢ CUỐI CÙNG ==================
 output_pt = OUTPUT_DIR / "news2vec_sota.pt"
-output_pkl = OUTPUT_DIR / "news_encoded_sota.pkl"
+# output_pkl = OUTPUT_DIR / "news_encoded_sota.pkl"
 
-torch.save(final_dict, output_pt)
-with open(output_pkl, 'wb') as f:
-    pickle.dump(final_dict, f)
+# torch.save(final_dict, output_pt)
+# with open(output_pkl, 'wb') as f:
+#     pickle.dump(final_dict, f)
 
 print("\n" + "="*70)
 print("HOÀN THÀNH 100%!")
