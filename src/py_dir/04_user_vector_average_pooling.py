@@ -5,12 +5,19 @@ import math
 from tqdm import tqdm
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent
-OUTPUT = BASE_DIR / "processed_data" / "user_smart_vector.pt"
+# BASE_DIR = Path(__file__).parent.parent
+# OUTPUT = BASE_DIR / "processed_data" / "user_vector.pt"
 
-news_text   = torch.load(BASE_DIR / "processed_data" / "news2vec_sota.pt", map_location='cpu')
+# news_text   = torch.load(BASE_DIR / "processed_data" / "news2vec_sota.pt", map_location='cpu')
+# news_entity = torch.load(BASE_DIR / "processed_data" / "news_entity_vec.pt", map_location='cpu')
+# user_hist   = torch.load(BASE_DIR / "processed_data" / "user_history_dict.pt", map_location='cpu')
+
+BASE_DIR = Path(__file__).parent.parent
+news_text   = torch.load(BASE_DIR / "processed_data" / "news_text_vec.pt", map_location='cpu')
 news_entity = torch.load(BASE_DIR / "processed_data" / "news_entity_vec.pt", map_location='cpu')
-user_hist   = torch.load(BASE_DIR / "processed_data" / "user_history_dict.pt", map_location='cpu')
+user_hist   = torch.load(BASE_DIR / "processed_data" / "user_history_50.pt", map_location='cpu')
+OUTPUT      = BASE_DIR / "processed_data" / "user_vector.pt"
+
 
 # IDF đơn giản và nhẹ
 print("Tính IDF entity (nhẹ)...")

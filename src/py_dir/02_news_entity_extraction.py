@@ -9,9 +9,14 @@ from tqdm import tqdm
 from pathlib import Path
 import os
 
+# BASE_DIR = Path(__file__).parent.parent
+# ENTITY_PATH = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "entity_embedding.vec"
+# NEWS_PATH   = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
+
 BASE_DIR = Path(__file__).parent.parent
 ENTITY_PATH = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "entity_embedding.vec"
 NEWS_PATH   = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
+OUTPUT      = BASE_DIR / "processed_data" / "news_entity_vec.pt"
 OUTPUT_DIR  = BASE_DIR / "processed_data"
 OUTPUT_DIR.mkdir(exist_ok=True)
 

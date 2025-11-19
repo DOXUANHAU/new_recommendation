@@ -10,9 +10,13 @@ import os
 from pathlib import Path
 
 # ================== TỰ ĐỘNG TÌM ĐƯỜNG DẪN DỰ ÁN ==================
+# BASE_DIR = Path(__file__).parent.parent
+# NEWS_TSV = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
+# OUTPUT_DIR = BASE_DIR / "processed_data"
 BASE_DIR = Path(__file__).parent.parent
 NEWS_TSV = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
 OUTPUT_DIR = BASE_DIR / "processed_data"
+OUTPUT_DIR.mkdir(exist_ok=True)
 CACHE_DIR = BASE_DIR / "title_abstract_encoder"
 
 OUTPUT_DIR.mkdir(exist_ok=True)
@@ -113,7 +117,8 @@ for temp_file in temp_files:
     print(f"Đã ghép + xóa: {temp_file.name}")
 
 # ================== LƯU KẾT QUẢ CUỐI CÙNG ==================
-output_pt = OUTPUT_DIR / "news2vec_sota.pt"
+# output_pt = OUTPUT_DIR / "news2vec_sota.pt"
+output_pt = OUTPUT_DIR / "news_text_vec.pt"
 # output_pkl = OUTPUT_DIR / "news_encoded_sota.pkl"
 
 # torch.save(final_dict, output_pt)
