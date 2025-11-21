@@ -3,7 +3,7 @@ import torch
 import pandas as pd
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent
+BASE_DIR = Path(__file__).parent.parent.parent
 NEWS_TSV = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
 OUTPUT   = BASE_DIR / "processed_data" / "category_emb.pt"
 

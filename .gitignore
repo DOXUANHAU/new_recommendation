@@ -2,6 +2,8 @@ MINDlarge_train/
 MINDlarge_dev/
 MINDlarge_test/
 processed_data/
+temp_processed_data/
+title_abstract_encoder/
 
 *.png
 *.jpg

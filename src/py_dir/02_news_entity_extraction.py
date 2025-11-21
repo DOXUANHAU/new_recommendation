@@ -13,7 +13,8 @@ import os
 # ENTITY_PATH = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "entity_embedding.vec"
 # NEWS_PATH   = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
 
-BASE_DIR = Path(__file__).parent.parent
+BASE_DIR = Path(__file__).parent.parent.parent
+print(BASE_DIR)
 ENTITY_PATH = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "entity_embedding.vec"
 NEWS_PATH   = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
 OUTPUT      = BASE_DIR / "processed_data" / "news_entity_vec.pt"
