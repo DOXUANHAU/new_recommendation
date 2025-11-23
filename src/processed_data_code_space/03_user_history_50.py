@@ -10,7 +10,7 @@ from pathlib import Path
 # # OUTPUT    = BASE_DIR / "processed_data" / "user_history_dict.pt"
 # OUTPUT = BASE_DIR / "processed_data" / "user_history_50.pt"
 
-BASE_DIR = Path(__file__).parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent
 BEHAVIORS = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "behaviors.tsv"
 OUTPUT    = BASE_DIR / "processed_data" / "user_history_50.pt"
 OUTPUT.parent.mkdir(exist_ok=True)

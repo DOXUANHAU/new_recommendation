@@ -12,7 +12,7 @@ from pathlib import Path
 # news_entity = torch.load(BASE_DIR / "processed_data" / "news_entity_vec.pt", map_location='cpu')
 # user_hist   = torch.load(BASE_DIR / "processed_data" / "user_history_dict.pt", map_location='cpu')
 
-BASE_DIR = Path(__file__).parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent
 news_text   = torch.load(BASE_DIR / "processed_data" / "news_text_vec.pt", map_location='cpu')
 news_entity = torch.load(BASE_DIR / "processed_data" / "news_entity_vec.pt", map_location='cpu')
 user_hist   = torch.load(BASE_DIR / "processed_data" / "user_history_50.pt", map_location='cpu')

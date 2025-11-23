@@ -103,7 +103,7 @@ import os
 from tqdm import tqdm
 from pathlib import Path
 
-BASE_DIR = Path(__file__).parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent
 BEHAVIORS = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "behaviors.tsv"
 USER_HIST = BASE_DIR / "processed_data" / "user_history_50.pt"
 NEWS_CAT  = BASE_DIR / "processed_data" / "news_category_dict.pt"

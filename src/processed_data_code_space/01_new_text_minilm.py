@@ -13,7 +13,7 @@ from pathlib import Path
 # BASE_DIR = Path(__file__).parent.parent
 # NEWS_TSV = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
 # OUTPUT_DIR = BASE_DIR / "processed_data"
-BASE_DIR = Path(__file__).parent.parent.parent
+BASE_DIR = Path(__file__).parent.parent
 print(BASE_DIR)
 NEWS_TSV = BASE_DIR / "MINDlarge_train" / "MINDlarge_train" / "news.tsv"
 OUTPUT_DIR = BASE_DIR / "processed_data"
